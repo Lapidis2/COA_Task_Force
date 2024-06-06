@@ -1,4 +1,4 @@
-// @ts-nocheck
+
 document.addEventListener("DOMContentLoaded", function() {
     var grids = document.querySelectorAll('.grid');
    grids.forEach((grid)=>{
