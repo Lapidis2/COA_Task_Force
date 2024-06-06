@@ -1,9 +1,30 @@
-/* 
-  @media screen and (max-width: 768px) {
-    .grid img{
-      height: 100%; 
-      width: ((100% - 60px) / 2);
-
-    }
+@media screen and (max-width: 768px) {
+  .grid{
+   
+    padding-top: 60px;
+    
+    
   }
-   */
+  .grid img {
+    height: 600px;
+    width: auto;
+    max-width: 100%; 
+  }
+ 
+}
+@media screen and (max-width: 420px) {
+  .grid{
+   
+    padding-top: 60px;
+    
+    
+  }
+  .grid img {
+    height: 400px;
+    width: auto;
+    max-width: 100%; 
+  }
+ 
+}
+
+  
