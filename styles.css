@@ -27,6 +27,8 @@ html {
 
 .container img {
   transition: transform 0.3s ease;
+  height: 100%;
+  width: 100%;
 }
 
 .overlay .content {
@@ -72,9 +74,3 @@ a {
   display: none;
 }
 
-/* .new text{font-family: Poppins;
-font-size: 12px;
-font-weight: 400;
-line-height: 16.02px;
-text-align: left;
-} */

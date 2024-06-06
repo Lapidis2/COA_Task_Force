@@ -6,7 +6,8 @@ Also it contains the file for coding challenges
 * figma is used to get required UI images to be used
   
 
-Deployed_link:
+Deployed_link:https://jeanpierre-coa-task-force.netlify.app/
+
 
 1. Contribution: :hand:
 * You can clone this repostory on your local machine.
