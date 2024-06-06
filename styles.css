@@ -49,7 +49,7 @@ html {
 }
 
 .grid:hover img {
-  opacity: 0.05;
+  opacity: 0.1;
   cursor: pointer;
  
 }
