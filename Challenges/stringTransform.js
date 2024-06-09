@@ -1,4 +1,4 @@
-// lets creat function to reverse an input string
+
 function reversingString(string) {
     let reversedString = '';
     for (let i = string.length - 1; i >= 0; i--) {
@@ -7,12 +7,12 @@ function reversingString(string) {
     return reversedString;
 }
 
-// function to convert a string to ASCII codes
-function stringToAscII(str) {
+
+function stringToAscII(string) {
     let asciiStr = '';
-    for (let i = 0; i < str.length; i++) {
+    for (let i = 0; i < string.length; i++) {
         let asciiCode = '';
-        let charCode = str.charCodeAt(i);
+        let charCode = string.charCodeAt(i);
 
         while (charCode > 0) {
             asciiCode = String.fromCharCode(charCode % 10 + 48) + asciiCode;
@@ -20,35 +20,31 @@ function stringToAscII(str) {
         }
         asciiStr += asciiCode + ' ';
     }
-    return asciiStr.trim(); // Remove trailing space
+    return asciiStr.trim(); 
 }
 
-// Function to transform a string based on certain rules
-function transformString(inputStr) {
-    let transformedStr = '';
 
-    // Check if the length of the string is divisible by 15
-    if (inputStr.length % 15 === 0) {
-        transformedStr = reversingString(inputStr);
-        transformedStr = stringToAscII(transformedStr);
-    }
-    // Check if the length of the string is divisible by 3
-    else if (inputStr.length % 3 === 0) {
-        transformedStr = reversingString(inputStr);
-    }
-    // Check if the length of the string is divisible by 5
-    else if (inputStr.length % 5 === 0) {
-        transformedStr = stringToAscII(inputStr);
-    }
+function transformString(string) {
+  let transformedStr = "";
 
-    return transformedStr;
+  console.log("Original string:", string);
+  if (string.length % 15 === 0) {
+    return (transformedStr = stringToAscII(string.split("").reverse().join("")));
+     
+  } else if (string.length % 3 === 0) {
+    transformedStr = reversingString(string);
+  } else if (string.length % 5 === 0) {
+    transformedStr = stringToAscII(string);
+  }
+  else {
+    return transformedStr = ""; 
+  }
+
+  console.log("Transformed string:", transformedStr);
+  return transformedStr;
 }
-
-// Test the functionality
 let testString = 'hello world';
 console.log("Original string:", testString);
 let transformedString = transformString(testString);
 console.log("Transformed string:", transformedString);
-
-// Exporting functions
 module.exports = { reversingString, transformString,stringToAscII };
